@@ -3,14 +3,29 @@ html,body
 	height: 100%;
 }
 
-body {
-  background-color: powderblue;
-width: 100%;
+body {margin: 0;
+
+    width: 100%;
+    height: auto;
+	min-height: 100%;
+	position: relative;
+
+    background-color: powderblue;
+      }
+    p {
+    text-indent: 25px; /* Отступ первой строки в пикселах */
+   }
+.bg1, .bg2, bg3, bg4 	{padding: 0;
+    background-size: cover;
+	background-position: center;    background-repeat: no-repeat;
+    background-attachment: fixed;}
+.bg1 {
+    background-image: url(../images/fon5.jpg)
 }
 
    /* @media (min-width: 992px)and (max-width: 1199px) {*/
     .Ahighlight {
-  font-size: 23px;
+ font-size: 18px;
   font-style: italic;
   color: black;
   opacity: .6;
@@ -20,7 +35,7 @@ width: 100%;
   padding-top: 30px;
 }
     .Bhighlight {
-  font-size: 23px;
+  font-size: 18px;
   font-style: italic;
   color: black;
   opacity: .6;
@@ -28,11 +43,12 @@ width: 100%;
   padding-right: 20%;
 }
     .Chighlight {
+ text-shadow: 0px 2px 6px rgba(0,0,0,0.98);
   font-size: 68px;
   font-weight: bolder
   font-style: italic;
-  color:darkslateblue;
-  text-align:left;
+  color: white;
+  text-align:center;
   margin-left: 5%;
 padding-left: 20px;
   padding-right: 20px;
@@ -50,7 +66,7 @@ padding-left: 20px;
  .Mhighlight {
   font-size: 35px;
   font-style: oblique;
-  color: blue;
+  color:a;
   opacity: .6;
   text-align:left;
   padding-top: 20px;
@@ -85,7 +101,6 @@ header
 }
 } 
    .navbar-nav{
-        height: 90px;
         padding-left: 15px;
         min-width: 500px;
         border-radius: 25px;
@@ -94,7 +109,6 @@ header
 header .navbar-brand img
 {
 	height: 40px;
-	wigth:80px;
 	margin-right: 1px;
 	float: left;
 }
@@ -127,9 +141,8 @@ header .navbar-brand span
 	padding-left: 15px;
 }
      .navbar-nav li a {
-        display: block;
+           display: block;
          font-size: 18px;
-        padding-top:  25px;
         width: 300px;
         color: y;
         text-align: center;
@@ -150,9 +163,8 @@ header .navbar-brand span
       }
       
       .navbar-nav li {
-        float: left;
+           float: left;
         position: relative;
-        height: 90px;
           width: 300px;
       }
      
@@ -199,21 +211,21 @@ header h1
 }
 #content {
     z-index: auto;
-    background-color: skyblue;
+    background-color: powderblue;
     width: 95%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 18px;
     float:left;
     margin-left: 2%;
     margin-right: 2%;
-    font-size: 22px;
+    font-size: 18px;
     padding: 20px;
 }
 
  h2 {
-  background-color: skyblue;
+  background-color: powderblue;
   height: 100%;
   font-style: italic;
   text-align: left;
@@ -239,7 +251,7 @@ header h1
     font-size:20px;
     text-align: left;
     font-style: oblique;
-         margin-left: 20px; 
+    margin-left: 20px; 
 }
     h5 {
     color: blue;
@@ -355,7 +367,7 @@ header h1
 .img-container6 {
     height: 800px;
     box-sizing: border-box;
-    background-color: skyblue;
+    background-color: powderblue;
     width:45%;
     float: right;
     margin-top: 20px;
@@ -370,7 +382,7 @@ header h1
 .img-container6 img {width: 100%;}
 .img-container8 {
     width: 95%;
-    background-color: skyblue;
+    background-color: powderblue;
     float: left;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -453,9 +465,7 @@ footer .contacts .desc
 .video {
     float:center;
     width: 40%;
-    margin-left: 30%
-    
-    
+    margin-left: 25%
 }
 [href="http://gymnasia.osvita-konotop.gov.ua/"] {
     color: white;
@@ -468,4 +478,27 @@ footer .contacts .desc
   z-index: 99;
   cursor: pointer;
   transition: display .5s;
+}
+blockquote {
+  opacity: .8;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+blockquote cite {
+    text-align: right;
+    display: block;
 }
